@@ -1,0 +1,22 @@
+name: todos_repository
+description: A flutter package to manage the  todos domain
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ^3.7.2
+  flutter: ^3.29.0
+
+dependencies:
+  cloud_firestore: ^5.6.6
+  equatable: ^2.0.5
+  flutter:
+    sdk: flutter
+  meta: ^1.9.1
+  uuid: ^4.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.4
+  very_good_analysis: ^6.0.0

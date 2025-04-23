@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "712798905129",
+    "project_id": "vertex-ai-demo-718f6",
+    "storage_bucket": "vertex-ai-demo-718f6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712798905129:android:e407ac2bfe2b8134b2cd38",
+        "android_client_info": {
+          "package_name": "com.example.vertex_ai_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4HbkjYMe5UW5Y9fmrqpeAv0dM102xPs4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
