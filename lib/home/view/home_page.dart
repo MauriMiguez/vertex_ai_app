@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:firebase_vertexai/firebase_vertexai.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -40,9 +38,10 @@ class HomeView extends StatelessWidget {
     return BlocListener<TodosBloc, TodosState>(
       listenWhen: (_, current) => current is UserFilterChanged,
       listener: (context, state) {
-        final encodedFilters = json.encode(state.filters.toLLMContextMap());
+        final encodedFilters = state.filters.toChatMessage();
+
         context.read<ChatBloc>().add(
-          ChatUserAddedMessage('User selected filters: $encodedFilters'),
+          ChatUserAddedMessage('User filtered tasks $encodedFilters'),
         );
       },
 
